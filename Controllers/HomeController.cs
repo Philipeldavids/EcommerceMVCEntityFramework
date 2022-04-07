@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -22,7 +22,7 @@ namespace Ecommerce.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Privacy()
         {
             return View();

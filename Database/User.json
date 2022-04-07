@@ -1,0 +1,124 @@
+{
+  "Id": 1,
+  "FirstName": "Stanislaus",
+  "LastName": "Franzel",
+  "Email": "sfranzel0@cpanel.net",
+  "Password": "cAXEZO4lF5g",
+  "Gender": "Male",
+  "PhoneNumber": "8679531335",
+  "Address": null,
+  "IsDeprecated": false
+},
+{
+  "Id": 2,
+  "FirstName": "Cordy",
+  "LastName": "Tapsfield",
+  "Email": "ctapsfield1@ning.com",
+  "Password": "jSPA0BXi",
+  "Gender": "Male",
+  "PhoneNumber": "7467396648",
+  "Address": null,
+  "IsDeprecated": false
+},
+{
+  "Id": 3,
+  "FirstName": "Lorry",
+  "LastName": "Blankenship",
+  "Email": "lblankenship2@unblog.fr",
+  "Password": "1EDOjH2",
+  "Gender": "Female",
+  "PhoneNumber": "4861730764",
+  "Address": null,
+  "IsDeprecated": false
+},
+{
+  "Id": 4,
+  "FirstName": "Juline",
+  "LastName": "Aspy",
+  "Email": "jaspy3@geocities.com",
+  "Password": "GKGytCwV",
+  "Gender": "Female",
+  "PhoneNumber": "8574651818",
+  "Address": null,
+  "IsDeprecated": true
+},
+{
+  "Id": 5,
+  "FirstName": "Mortimer",
+  "LastName": "Harget",
+  "Email": "mharget4@blogspot.com",
+  "Password": "wdIMBH7i",
+  "Gender": "Male",
+  "PhoneNumber": "6149267615",
+  "Address": null,
+  "IsDeprecated": true
+},
+{
+  "Id": 6,
+  "FirstName": "Tyson",
+  "LastName": "Woolard",
+  "Email": "twoolard5@disqus.com",
+  "Password": "QtneV9DloYG",
+  "Gender": "Male",
+  "PhoneNumber": "5235627853",
+  "Address":  null,
+  "IsDeprecated": true
+},
+{
+  "Id": 7,
+  "FirstName": "Laural",
+  "LastName": "Garrettson",
+  "Email": "lgarrettson6@51.la",
+  "Password": "Y4zJF6p",
+  "Gender": "Female",
+  "PhoneNumber": "2778736421",
+  "Address": null,
+  "IsDeprecated": false
+},
+
+{
+  "Id": 8,
+  "FirstName": "Georgine",
+  "LastName": "Zorzin",
+  "Email": "gzorzin7@umich.edu",
+  "Password": "WvaOW1xqi0m",
+  "Gender": "Female",
+  "PhoneNumber": "7721194591",
+  "Address": null,
+  "IsDeprecated": false
+},
+{
+  "Id": 9,
+  "FirstName": "Tedda",
+  "LastName": "Scriver",
+  "Email": "tscriver8@who.int",
+  "Password": "NDm05VBeq1",
+  "Gender": "Female",
+  "PhoneNumber": "3169595186",
+  "Address": null,
+  "IsDeprecated": true
+},
+{
+  "Id": 10,
+  "FirstName": "Gherardo",
+  "LastName": "Hadwin",
+  "Email": "ghadwin9@nature.com",
+  "Password": "DHjWZi0sw9",
+  "Gender": "Male",
+  "PhoneNumber": "3854980782",
+  "Address": null,
+  "IsDeprecated": false
+}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:34:21.5701645+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:34:48.8233478+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:40:26.8629646+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:40:32.0967077+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:40:33.6302429+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:40:34.6149833+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:48:44.6461755+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T20:48:46.2602414+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":null,"DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-06T21:02:20.22429+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":0,"FullName":"Olorunfemi Ayanfe","FirstName":"Olorunfemi","LastName":"Ayanfe","Email":"olorunfemiayanfe@gmail.com","Password":"Beloved_123","Gender":"true","DateofBirth":"2022-04-14T00:00:00","PhoneNumber":"08038694925","Address":null,"DateCreated":"2022-04-06T21:50:30.2778837+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"FirstName":"Ebele","LastName":"Ozoani","Email":"ebele@gmail.com","Password":"Success_123","Gender":"true","DateofBirth":"2022-03-27T00:00:00","PhoneNumber":"08046583925","Address":null}
+{"Id":0,"FullName":"Ozoani Cynthia","FirstName":"Ozoani","LastName":"Cynthia","Email":"ozoani@gmail.com","Password":"Ebele@123","Gender":"Male","DateofBirth":"2022-03-30T00:00:00","PhoneNumber":"08046583925","Address":null,"DateCreated":"2022-04-06T23:29:02.7164398+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}
+{"Id":"4ace7706-c1dd-4d62-a8cb-5999085995c8","FullName":" ","FirstName":null,"LastName":null,"Email":null,"Password":null,"Gender":"Male","DateofBirth":"0001-01-01T00:00:00","PhoneNumber":null,"Address":null,"DateCreated":"2022-04-07T01:08:57.9241167+01:00","DateModified":"0001-01-01T00:00:00","IsDeprecated":false}

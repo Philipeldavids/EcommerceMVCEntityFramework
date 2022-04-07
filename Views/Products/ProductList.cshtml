@@ -1,0 +1,199 @@
+﻿@model IEnumerable<Ecommerce.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+}
+<div class="nav"><span><a href="https://localhost:44316/">Home</a></span><span>/HotDeals</span></div>
+<h1>All Products</h1>
+ 
+
+<div>
+    <ul class="products">
+        <li style="color:#40BFFF"><a href="https://localhost:44316/Products/ProductList">All</a></li>
+        <li><a href="#">Bag</a></li>
+        <li><a href="#">Sneakers</a></li>
+        <li><a href="#">Belt</a></li>
+        <li><a href="#">Sunglasses</a></li>
+    </ul>
+</div>
+<div class="product-log">
+@foreach(var item in Model)
+{    
+     <div class="contain">
+                    <img src="@item.ImageUrl" alt="" class="product-image" >                     
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">@item.Name</p>
+                <div class="star">
+                        <img src="~/images/star copy 4.png" alt="">
+                        <img src="~/images/star copy 4.png" alt="">
+                        <img src="~/images/star copy 4.png" alt="">
+                        <img src="~/images/star copy 4.png" alt="">
+                        <img src="~/images/star copy 2.png" alt="">
+                </div>                    
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">@item.Price</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$@item.DiscountedPrice</strike></p>
+                        <p style="color:#FB7181;">@item.PercentOff % Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div> 
+}
+</div>>
+
+@*<div class="product-log">
+        <div class="contain">
+                    <img src="images/image Product (1).png" alt="" class="product-image" >                     
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>                    
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/image Product (2).png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/Product Picture02.png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/image Product (3).png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/Product Picture01.png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/Product Picture02.png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+        <div class="contain"><img src="images/Product Picture03.png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div></div>
+        <div class="contain"><img src="images/image Product (3).png" alt="">
+            <div class = "product-desc">
+                <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
+                <div class="star">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 4.png" alt="">
+                    <img src="images/star copy 2.png" alt="">
+                </div>
+                <div class="prod-price">
+                    <p style="color: #40BFFF; font-weight:bold;">$299,43</p>
+                    <div style="margin-left: 6px; display: flex;">
+                        <p style="color:#9098B1; font-size:x-small;"><strike>$534,33</strike></p>
+                        <p style="color:#FB7181;">24% Off</p>
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+</div>
+
+*@

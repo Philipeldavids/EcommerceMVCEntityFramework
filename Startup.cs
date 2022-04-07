@@ -1,3 +1,6 @@
+using Ecommerce.Helper;
+using Ecommerce.Interface;
+using Ecommerce.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +27,11 @@ namespace Ecommerce
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IReadFromJson, ReadFromJson>();
+            services.AddScoped<IProduct, ProductService>();
+            services.AddScoped<IUsers, UserService>();
+            services.AddScoped<IAuthenticate, AuthService>();  
+            services.AddScoped<IWriteToJson, WriteToJson>();    
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
