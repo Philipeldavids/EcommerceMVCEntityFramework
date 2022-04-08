@@ -15,15 +15,12 @@ namespace Ecommerce.Models
         public string Color { get; set; }
         public string Price { get; set; }
         public Category Category { get; set; }
-        public string Brand { get; set; }
-        public string Ratings { get; set; }
+        public Brands Brand { get; set; }
+        public Ratings Rating { get; set; }
         public int NoOfPurchase { get; set; }
         public string DiscountedPrice { get; set; }
-        public decimal PercentOff { get; set; }
-        /*{
-            get => (Convert.ToDecimal(DiscountedPrice) - Convert.ToDecimal(Price)) / Convert.ToDecimal(Price) * 100;
-        }*/
-        
+        public decimal PercentOff { get; set; } 
+        public bool IsFeatured { get; set; }        
         /*public ICollection<Review> Reviews { get; set; }*/
     }
 }

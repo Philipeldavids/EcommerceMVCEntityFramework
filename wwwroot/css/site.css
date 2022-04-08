@@ -35,6 +35,9 @@ for details on configuring this project to bundle and minify static web assets. 
     justify-content: space-between;
     width: 50px;    
 }
+#profile-link {
+    display: none;
+}
 /*.top-right:first-child{    
     width: 100px;
 }*/
@@ -699,7 +702,7 @@ hr {
     justify-content: space-between;
     border: none;
     margin: 15px auto;
-    width: 350px;    
+    width: 360px;    
 }
 .signOn{
     /*display: block;*/

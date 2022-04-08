@@ -6,14 +6,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 2,
   "Name": "Nike Air Max 270 React",
@@ -22,14 +22,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 3,
   "Name": "Nike Air Max 270 React",
@@ -38,14 +38,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 4,
   "Name": "Nike Air Max 270 React",
@@ -54,14 +54,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 5,
   "Name": "Nike Air Max 270 React",
@@ -70,14 +70,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43", 
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 6,
   "Name": "Nike Air Max 270 React",
@@ -86,14 +86,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 7,
   "Name": "Nike Air Max 270 React",
@@ -102,14 +102,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43", 
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 8,
   "Name": "Nike Air Max 270 React",
@@ -118,14 +118,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 9,
   "Name": "Nike Air Max 270 React",
@@ -134,14 +134,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 10,
   "Name": "Nike Air Max 270 React",
@@ -150,14 +150,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 11,
   "Name": "Nike Air Max 270 React",
@@ -166,14 +166,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 12,
   "Name": "Nike Air Max 270 React",
@@ -182,14 +182,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43", 
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 13,
   "Name": "Nike Air Max 270 React",
@@ -198,14 +198,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 14,
   "Name": "Nike Air Max 270 React",
@@ -214,14 +214,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 15,
   "Name": "Nike Air Max 270 React",
@@ -230,14 +230,14 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43",  
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
 }, {
   "Id": 16,
   "Name": "Nike Air Max 270 React",
@@ -246,12 +246,62 @@
   "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
   "Quantity": 2,
   "Color": "Blue",
-  "Price": "$299.43",
-  "Category": "Bags",
+  "Price": "$299.43", 
   "Brand": "Nike",
   "Ratings": 4,
   "Reviews": 1,
   "NoOfPurchase": 3,
   "DiscountedPrice": 534.33,
-  "PercentOff": 24
+  "PercentOff": 24,
+  "IsFeatured": false
+}, {
+  "Id": 17,
+  "Name": " Blue Swade Nike Sneakers",
+  "UserId": 1,
+  "ImageUrl": "/images/Vector.png",
+  "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+  "Quantity": 2,
+  "Color": "Blue",
+  "Price": "$499",  
+  "Brand": "Nike",
+  "Ratings": 4,
+  "Reviews": 1,
+  "NoOfPurchase": 3,
+  "DiscountedPrice": 599,
+  "PercentOff": 24,
+  "IsFeatured": true
+}, {
+  "Id": 18,
+  "Name": " Blue Swade Nike Sneakers",
+  "UserId": 1,
+  "ImageUrl": "/images/Vector.png",
+  "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+  "Quantity": 2,
+  "Color": "Blue",
+  "Price": "$499",  
+  "Brand": "Nike",
+  "Ratings": 4,
+  "Reviews": 1,
+  "NoOfPurchase": 3,
+  "DiscountedPrice": 599,
+  "PercentOff": 24,
+  "IsFeatured": true
 },
+
+{
+  "Id": 18,
+  "Name": " Blue Swade Nike Sneakers",
+  "UserId": 1,
+  "ImageUrl": "/images/Vector.png",
+  "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+  "Quantity": 2,
+  "Color": "Blue",
+  "Price": "$499",  
+  "Brand": "Nike",
+  "Ratings": 4,
+  "Reviews": 1,
+  "NoOfPurchase": 3,
+  "DiscountedPrice": 599,
+  "PercentOff": 24,
+  "IsFeatured": true
+}

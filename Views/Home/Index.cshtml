@@ -1,7 +1,8 @@
 ﻿@model IEnumerable<Ecommerce.Models.Product>
 @{
-    ViewData["Title"] = "Home Page";    
+    ViewData["Title"] = "Home Page";
 }
+
 
     <div class="banner">
         <div class ="img-container">
@@ -50,8 +51,35 @@
                 <li><a href="#">Sunglasses</a></li>
             </ul>
         </div>
-       <div class="product-log">
-            <div class="contain">
+       <div class="product-log">   
+
+            @foreach(var item in Model)
+            {    
+                if(@item.Id < 9)
+                {
+                    <div class="contain">
+                        <img src="@item.ImageUrl" alt="" class="product-image" >                     
+                        <div class = "product-desc">
+                            <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">@item.Name</p>
+                            <div class="star">
+                                    <img src="~/images/star copy 4.png" alt="">
+                                    <img src="~/images/star copy 4.png" alt="">
+                                    <img src="~/images/star copy 4.png" alt="">
+                                    <img src="~/images/star copy 4.png" alt="">
+                                    <img src="~/images/star copy 2.png" alt="">
+                            </div>                    
+                            <div class="prod-price">
+                                <p style="color: #40BFFF; font-weight:bold;">@item.Price</p>
+                                <div style="margin-left: 6px; display: flex;">
+                                    <p style="color:#9098B1; font-size:x-small;"><strike>$@item.DiscountedPrice</strike></p>
+                                    <p style="color:#FB7181;">@item.PercentOff % Off</p>
+                                </div>                        
+                            </div>                
+                        </div>
+                    </div>        
+                }                
+            }
+        @*<div class="contain">
                      <img src="~/images/image Product (1).png" alt="" class="product-image" >                     
                 <div class = "product-desc">
                     <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">Nike Air Max 270 React</p>
@@ -211,7 +239,7 @@
                     </div>                
                 </div>
             </div>
-        </div>     
+        </div>*@     
     </div>
     <div class="mid-section">
         <div id="heading-mid"><a asp-controller="Products" asp-action="ProductList">LOAD MORE</a></div>
@@ -235,7 +263,8 @@
     <div class="headingnews">
         LATEST NEWS
     </div>
-    <div class="news">          
+    <div class="news">     \
+      
         <div class = "newsNews">
             <div>
                 <img src="/images/Nike_logo_emblem_logotype 1.png">
@@ -271,27 +300,34 @@
         FEATURED PRODUCTS
     </div>
     <div id = "featureditems"> 
-        <div class="featureditem" >
-            <img src="images/Vector.png" alt=""> 
-            <div class="featured-desc">
-                <p>
-                    Blue Swade Nike Sneakers
-                </p>
-                <div class="featuredstar">
-                    <img src="images/star copy 4.png" alt="">
-                    <img src="images/star copy 4.png" alt="">
-                    <img src="images/star copy 4.png" alt="">
-                    <img src="images/star copy 4.png" alt="">
-                    <img src="images/star copy 2.png" alt="">
-                </div>
-                <div class=" featured-price">
-                    <p style="color:#FF4858;">$499</p>
-                    <p style="margin-left: 2px; color: #C1C8CE;"><strike>$599</strike></p>
-                </div>
-            </div>
-        </div>        
-        <div class="featureditem" >
-            <img src="images/Vector.png" alt=""> 
+         @foreach(var item in Model)
+            {
+                if(item.IsFeatured == true)
+                {
+                   <div class="featureditem" >
+                       <img src="@item.ImageUrl" alt=""> 
+                        <div class="featured-desc">
+                            <p>
+                                @item.Name
+                            </p>
+                            <div class="featuredstar">
+                                <img src="images/star copy 4.png" alt="">
+                                <img src="images/star copy 4.png" alt="">
+                                <img src="images/star copy 4.png" alt="">
+                                <img src="images/star copy 4.png" alt="">
+                                <img src="images/star copy 2.png" alt="">
+                            </div>
+                            <div class=" featured-price">
+                                <p style="color:#FF4858;">@item.Price</p>
+                                <p style="margin-left: 2px; color: #C1C8CE;"><strike>$@item.DiscountedPrice</strike></p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        
+        @*<div class="featureditem" >           
+            <img src="/images/Vector.png" alt=""> 
             <div class="featured-desc">
                 <p>
                     Blue Swade Nike Sneakers
@@ -310,7 +346,7 @@
             </div>               
         </div>
         <div class="featureditem">
-            <img src="images/Vector.png" alt="">
+            <img src="/images/Vector.png" alt="">
             <div class="featured-desc">
                 <p>
                     Blue Swade Nike Sneakers
@@ -327,7 +363,7 @@
                     <p style="margin-left: 2px; color: #C1C8CE;"><strike>$599</strike></p>
                 </div>
             </div> 
-        </div>       
+        </div>       *@
     </div>       
   <div>
         <form class = "search-box">

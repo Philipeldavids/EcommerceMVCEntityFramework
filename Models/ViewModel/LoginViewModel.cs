@@ -9,5 +9,7 @@ namespace Ecommerce.Models.ViewModel
         [Required]
         public string Password { get; set; }
 
+        public bool IsLogin { get; set; }   
+
     }
 }

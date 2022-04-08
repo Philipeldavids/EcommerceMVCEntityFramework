@@ -6,9 +6,10 @@
     <title>@ViewData["Title"] - Ecommerce</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway">
     <script src="~/js/site.js"></script>
+    
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
                 </div>
                 <div>
                     <ul class="top-right">
-                        <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i>&nbsp;Login/SignUp</a></li>
+                        <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i>&nbsp;Login<span Id="profile-link">My profile</span></a></li>
                         <li class ="topspace"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Items</a></li>
                         <li class ="topspace"><a href="#">$0.00&nbsp;&nbsp;<i class="fas fa-search"></i></a></li>
                     </ul>   
