@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Interface;
 using Ecommerce.Models;
+using Ecommerce.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -14,16 +15,19 @@ namespace Ecommerce.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProduct _product;
-        public HomeController(ILogger<HomeController> logger, IProduct product)
+        private readonly INews _news;
+        public HomeController(ILogger<HomeController> logger, IProduct product, INews news)
         {
             _logger = logger;
             _product = product;
+            _news = news;
         }
 
-        public async Task<IActionResult> Index()
-        { 
-            var products = await _product.GetProduct();
-            return View(products);
+        public async Task<IActionResult> Index(UserProductViewModel userProductViewModel)
+        {
+            userProductViewModel.ProductView = await _product.GetProduct();
+            userProductViewModel.News = await _news.GetNews();            
+            return View(userProductViewModel);
         }
    
         

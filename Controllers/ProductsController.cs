@@ -14,23 +14,17 @@ namespace Ecommerce.Controllers
         {
             _product = product;
         }
-        public async Task<IActionResult> ProductList(/*int page=1*/)
+        public async Task<IActionResult> ProductList(int page = 1)
         {
             var products = await _product.GetProduct();
-            /*var productView = new ProductViewModel()
+            var productView = new UserProductViewModel()
             {
-                Products = products,
-                ProductPerPage = 16,
+                ProductView = products,
+                ProductPerPage = 8,
                 Currentpage = page
-            };*/
-            return View(products);
+            };
+            return View(productView);
         }
-       /* public async Task<IActionResult> ProductListFeatured()
-        {
-            var products = await _product.GetProduct();
-               
-            return View(products);
-        }*/
-
+       
     }
 }

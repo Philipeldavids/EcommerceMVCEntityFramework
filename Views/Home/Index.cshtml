@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Ecommerce.Models.Product>
+﻿@model Ecommerce.Models.ViewModel.UserProductViewModel
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -53,7 +54,7 @@
         </div>
        <div class="product-log">   
 
-            @foreach(var item in Model)
+            @foreach(var item in Model.ProductView.OrderBy(x => x.NoOfPurchase).ToList())
             {    
                 if(@item.Id < 9)
                 {
@@ -263,9 +264,22 @@
     <div class="headingnews">
         LATEST NEWS
     </div>
-    <div class="news">     \
+    <div class="news">     
       
-        <div class = "newsNews">
+        @foreach(var item in Model.News)
+        {
+            <div class = "newsNews">
+            <div>
+                <img src="@item.ImageUrl">
+            </div>              
+            <div class="news-caption">
+                <p class ="newsdate">@item.Date</p>
+                <p class="newsTitle">@item.Title</p>         
+                <p class = "news-content">@item.Content</p>
+            </div>
+        </div> 
+        }
+        @*<div class = "newsNews">
             <div>
                 <img src="/images/Nike_logo_emblem_logotype 1.png">
             </div>              
@@ -294,13 +308,13 @@
                 <p class="newsTitle">HR Community</p>                         
                 <p class = "news-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>                    
-        </div>                              
+        </div>   *@                           
     </div>
     <div class="headingnews">
         FEATURED PRODUCTS
     </div>
     <div id = "featureditems"> 
-         @foreach(var item in Model)
+         @foreach(var item in Model.ProductView)
             {
                 if(item.IsFeatured == true)
                 {

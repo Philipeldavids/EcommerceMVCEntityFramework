@@ -24,7 +24,15 @@
                 </div>
                 <div>
                     <ul class="top-right">
-                        <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i>&nbsp;Login<span Id="profile-link">My profile</span></a></li>
+                        @if(Model.IsLogin == false)
+                        {
+                            <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i>&nbsp;Login</a></li>
+                        }
+                        else
+                        {
+                            <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i><span>My profile</span></a></li>
+                        }
+                        
                         <li class ="topspace"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Items</a></li>
                         <li class ="topspace"><a href="#">$0.00&nbsp;&nbsp;<i class="fas fa-search"></i></a></li>
                     </ul>   

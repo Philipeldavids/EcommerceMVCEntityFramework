@@ -757,3 +757,6 @@ textarea {
 .nav a {
     color: #BCDDFE;
 }
+.pagination{
+    margin: 0 auto;
+}

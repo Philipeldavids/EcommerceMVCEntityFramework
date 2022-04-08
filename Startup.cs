@@ -31,7 +31,8 @@ namespace Ecommerce
             services.AddScoped<IProduct, ProductService>();
             services.AddScoped<IUsers, UserService>();
             services.AddScoped<IAuthenticate, AuthService>();  
-            services.AddScoped<IWriteToJson, WriteToJson>();    
+            services.AddScoped<IWriteToJson, WriteToJson>();  
+            services.AddScoped<INews, NewsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

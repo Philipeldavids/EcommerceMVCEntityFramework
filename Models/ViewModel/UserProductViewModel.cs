@@ -1,13 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Ecommerce.Models.ViewModel
 {
     public class UserProductViewModel
     {
-        public List<UserViewModel> UserView { get; set; }
-        public List<ProductViewModel> ProductView { get; set; }
+        public List<User> UserView { get; set; }
+        public List<Product> ProductView { get; set; }
+        public List<News> News { get; set; }
+        public bool IsLogin { get; set; }
 
-        public List<LoginViewModel> LoginView { get; set; }
+        public int ProductPerPage { get; set; }
+        public int Currentpage { get; set; }
+        public int PageCount()
+        {
+            return Convert.ToInt32(Math.Ceiling(ProductView.Count() / (double)ProductPerPage));
+        }
+
+        public IEnumerable<Product> PaginatedPage()
+        {
+            int start = (Currentpage - 1) * ProductPerPage;
+            return ProductView.OrderBy(x => x.Id).Skip(start).Take(ProductPerPage);
+        }
 
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Ecommerce.Models.Product>
+﻿@model Ecommerce.Models.ViewModel.UserProductViewModel
 @{
     ViewData["Title"] = "Products";
 }
@@ -16,9 +16,9 @@
     </ul>
 </div>
 <div class="product-log">
-@foreach(var item in Model)
-{    
-     <div class="contain">
+@foreach(var item in Model.PaginatedPage())
+{          
+            <div class="contain">
                     <img src="@item.ImageUrl" alt="" class="product-image" >                     
             <div class = "product-desc">
                 <p style = "font-family: Poppins; font-size: 12px; font-weight: bold;">@item.Name</p>
@@ -38,9 +38,17 @@
                 </div>                
             </div>
         </div> 
+            
 }
-</div>>
-
+</div>
+<ul class = "pagination"> 
+    @for(int i = 1; i<= Model.PageCount(); i++)
+    {
+        <li class="@(i == Model.Currentpage ? "page-item active" : "page-item")">
+            <a class="page-link" href="@Url.Action("ProductList", new {page = i})">@i</a>
+        </li>
+    }
+</ul>
 @*<div class="product-log">
         <div class="contain">
                     <img src="images/image Product (1).png" alt="" class="product-image" >                     
