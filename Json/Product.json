@@ -15,15 +15,19 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": 
+      {
+        "Name": "Shoe"
+      }    
   },
   {
 
@@ -41,15 +45,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -67,15 +74,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -93,15 +103,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -119,15 +132,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -145,15 +161,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -171,15 +190,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -197,15 +219,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -223,15 +248,17 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -249,15 +276,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -275,15 +305,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -301,15 +334,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -327,15 +363,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -353,15 +392,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-        
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+       
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -379,15 +421,18 @@
     "IsFeatured": false,
     "Orders": [
       {
-       
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   },
   {
 
@@ -405,93 +450,105 @@
     "IsFeatured": false,
     "Orders": [
       {
-       
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
-      }
-    ]
-  },
-  {
-
-    "Name": " Blue Swade Nike Sneakers",
-    "UserId": 1,
-    "ImageUrl": "/images/Vector.png",
-    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
-    "Quantity": 2,
-    "Color": 1,
-    "Price": 499,
-    "Ratings": 4,
-    "NoOfPurchase": 3,
-    "DiscountedPrice": 599,
-    "PercentOff": 24,
-    "IsFeatured": true,
-    "Orders": [
-      {
-       
-        "Date": "12/14/2021",
-        "Status": false,
-        "UserId": 29,
-        "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
-      }
-    ]
-  },
-  {
-
-    "Name": " Blue Swade Nike Sneakers",
-    "UserId": 1,
-    "ImageUrl": "/images/Vector.png",
-    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
-    "Quantity": 2,
-    "Color": 1,
-    "Price": 499,
-    "Ratings": 4,
-    "NoOfPurchase": 3,
-    "DiscountedPrice": 599,
-    "PercentOff": 24,
-    "IsFeatured": true,
-    "Orders": [
-      {
-       
-        "Date": "12/14/2021",
-        "Status": false,
-        "UserId": 29,
-        "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
-      }
-    ]
-  },
-
-  {
-
-    "Name": " Blue Swade Nike Sneakers",
-    "UserId": 1,
-    "ImageUrl": "/images/Vector.png",
-    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
-    "Quantity": 2,
-    "Color": 1,
-    "Price": 499,
-    "Ratings": 4,
-    "NoOfPurchase": 3,
-    "DiscountedPrice": 599,
-    "PercentOff": 24,
-    "IsFeatured": true,
-    "Orders": [
-      {
+        "Price": "$3.13"
         
+      }
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
+  },
+  {
+
+    "Name": " Blue Swade Nike Sneakers",
+    "UserId": 1,
+    "ImageUrl": "/images/Vector.png",
+    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+    "Quantity": 2,
+    "Color": 1,
+    "Price": 499,
+    "Ratings": 4,
+    "NoOfPurchase": 3,
+    "DiscountedPrice": 599,
+    "PercentOff": 24,
+    "IsFeatured": true,
+    "Orders": [
+      {
+
         "Date": "12/14/2021",
         "Status": false,
         "UserId": 29,
         "Quantity": 17,
-        "Price": "$3.13",
-        "ProductId": 47
+        "Price": "$3.13"
+        
       }
-    ]
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
+  },
+  {
+
+    "Name": " Blue Swade Nike Sneakers",
+    "UserId": 1,
+    "ImageUrl": "/images/Vector.png",
+    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+    "Quantity": 2,
+    "Color": 1,
+    "Price": 499,
+    "Ratings": 4,
+    "NoOfPurchase": 3,
+    "DiscountedPrice": 599,
+    "PercentOff": 24,
+    "IsFeatured": true,
+    "Orders": [
+      {
+
+        "Date": "12/14/2021",
+        "Status": false,
+        "UserId": 29,
+        "Quantity": 17,
+        "Price": "$3.13"
+        
+      }
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
+  },
+
+  {
+
+    "Name": " Blue Swade Nike Sneakers",
+    "UserId": 1,
+    "ImageUrl": "/images/Vector.png",
+    "Description": "Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...",
+    "Quantity": 2,
+    "Color": 1,
+    "Price": 499,
+    "Ratings": 4,
+    "NoOfPurchase": 3,
+    "DiscountedPrice": 599,
+    "PercentOff": 24,
+    "IsFeatured": true,
+    "Orders": [
+      {
+
+        "Date": "12/14/2021",
+        "Status": false,
+        "UserId": 29,
+        "Quantity": 17,
+        "Price": "$3.13"
+        
+      }
+    ],
+    "Category": {
+      "Name": "Shoe"
+    }
   }
 ]

@@ -19,8 +19,8 @@ namespace Ecommerce.Repository
         {
             //Eager Loading
             var products = await _dbContext.Products
-                        .Include(s => s.Orders)                        
-                        .Include(s => s.Reviews).ToListAsync();
+                        .Include(s => s.Orders)                     
+                        .Include(s => s.Category).ToListAsync();
 
 
             return products;
