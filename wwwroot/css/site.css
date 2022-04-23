@@ -933,6 +933,9 @@ textarea {
     .bestSeller-nav a {
         margin: 7px;
     }
+    .bestSeller-nav li{
+        list-style-type: none;
+    }
 
 .bestSeller-container {
     width: 100%;

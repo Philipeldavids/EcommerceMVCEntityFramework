@@ -20,13 +20,13 @@ namespace Ecommerce.Controllers
         private readonly IAuthenticate _authenticate;
         private readonly INews _news;
 
-        public HomeController(ILogger<HomeController> logger, IProduct product, IAuthenticate authenticate /*INews news*/)
+        public HomeController(ILogger<HomeController> logger, IProduct product, IAuthenticate authenticate, INews news)
         {
             _logger = logger;
             _product = product;
-            _authenticate = authenticate;   
-            /*_news = news;*/
-               
+            _authenticate = authenticate;
+            _news = news;
+
         }
 
         public async Task<IActionResult> Index(UserProductViewModel userProductViewModel)

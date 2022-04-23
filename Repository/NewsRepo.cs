@@ -17,15 +17,9 @@ namespace Ecommerce.Repository
             _dbContext = dbContext;
         }
         public async Task<List<News>> GetNews()
-        {
-            //Eager Loading
-            var news = await _dbContext.News
-                      .Include(x => x.Id)
-                      .Include(x => x.Title)
-                      .Include(x => x.Content)
-                      .Include(x => x.Date).ToListAsync();
-
-
+        {           
+            var news = await _dbContext.News.ToListAsync();                 
+       
             return news;
         }
     }

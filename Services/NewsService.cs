@@ -18,8 +18,8 @@ namespace Ecommerce.Services
         {
             try
             {
-                var news = await _newsRepo.GetNews();               
-                return news;
+               var news = await _newsRepo.GetNews();                
+               return news;
                 
             }
             catch (Exception)

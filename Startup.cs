@@ -32,6 +32,7 @@ namespace Ecommerce
             services.AddControllersWithViews();
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<IUserRepo, UserRepo>();
+            services.AddScoped<INewsRepo, NewsRepo>();
             services.AddScoped<IProduct, ProductService>();
             services.AddScoped<IUsers, UserService>();
             services.AddScoped<IAuthenticate, AuthService>();
