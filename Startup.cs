@@ -35,7 +35,7 @@ namespace Ecommerce
             services.AddScoped<IProduct, ProductService>();
             services.AddScoped<IUsers, UserService>();
             services.AddScoped<IAuthenticate, AuthService>();
-            /*services.AddScoped<INews, NewsService>();*/
+            services.AddScoped<INews, NewsService>();
             services.RegisterDBContext(Configuration);
             
         }
