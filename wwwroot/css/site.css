@@ -33,7 +33,7 @@ for details on configuring this project to bundle and minify static web assets. 
 .topspace a{
     display: flex;
     justify-content: space-between;
-    width: 50px;    
+    width: 65px;    
 }
 #profile-link {
     display: none;
@@ -758,5 +758,165 @@ textarea {
     color: #BCDDFE;
 }
 .pagination{
+    margin-top: 20px;    
+    justify-content: center;
+}
+
+/*Product page Styling
+    ---------------------------------*/
+.nav-container {
+}
+
+.navigator {
+    display: flex;
+    background-color: #F6F7F8;
+    justify-content: center;
+    padding: 3px;
+    font-size: medium;
+}
+
+    .navigator li {
+        list-style-type: none;
+    }
+
+.product-container {
+    display: grid;   
+    grid-template-columns: 22% 78%;
+    grid-gap: 17px;
+    border: 1px solid green;
+    margin: 40px;
+}
+.deal-list {
+    padding: 20px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    background-color: #F6F7F8;
+    border-radius: 3px;
+    height: 320px;
+}
+.deal-list-head{
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+.deal-list-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.color {
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    width: 200px;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.black {
+    background: black;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.purple {
+    background: purple;
+}
+
+.grey {
+    background: grey;
+}
+
+.deal-list-color {
+    padding: 20px;
+    justify-content: center;
+    background-color: #F6F7F8;
+    border-radius: 3px;
+    height: 120px;
+}
+
+.deal-list-brand {
+    padding: 20px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    background-color: #F6F7F8;
+    border-radius: 3px;
+    height: 200px;
+}
+.prod-prop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 1px solid red;
+    /*width: 42%;*/
+}
+.product-logs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);    
+}
+.prod-header {
+    /*position: absolute;*/
+    display: flex;
+    height: 260px;   
+    background-color: #40BFFF;
+    /*width: 100%;*/
+    /* margin-top: 70px;*/
+    align-items: center;
+}
+#prod-header-caption {
+    color: white;
+}
+.prod-control {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    background-color: #F6F7F8;
+    align-items: center;
+    margin-top: 17px;
+    height: 50px;
+}
+.prod-control-one {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    border: 1px solid green;
+    align-items: center;
+    height: 30px;
+    margin-left: 15px;    
+}
+.name-control {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 5px;
+    /*justify-items: center;*/
+    /*align-items: center;*/
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+}
+.product-log-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 17px;
+    /*width: 60%;*/
+   /* margin: 0 auto;*/
+    margin-top: 17px;
+    border: 1px solid red;
 }

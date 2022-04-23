@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model Ecommerce.Models.ViewModel.UserProductViewModel
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -23,16 +24,20 @@
                     </ul>     
                 </div>
                 <div>
-                    <ul class="top-right">
-                        @if(Model.IsLogin == false)
-                        {
-                            <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i>&nbsp;Login</a></li>
-                        }
-                        else
-                        {
-                            <li class ="topspace"><a asp-controller="Authentication" asp-action="Login"><i class="fas fa-user"></i><span>My profile</span></a></li>
-                        }
+                    <ul class="top-right">                       
                         
+                        <li class ="topspace">
+                            @if(@Model.IsLogin == true)
+                            {
+                                 <a><i class="fas fa-user"></i>My Profile</a>                                
+                            }
+                            else
+                            {
+                               <a asp-controller="Authentication" asp-action="GetLogin"><i class="fas fa-user"></i>&nbsp;Login</a>
+                            }                  
+                                                       
+                        </li>
+                                                             
                         <li class ="topspace"><a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Items</a></li>
                         <li class ="topspace"><a href="#">$0.00&nbsp;&nbsp;<i class="fas fa-search"></i></a></li>
                     </ul>   

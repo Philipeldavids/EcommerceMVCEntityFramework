@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcommerceData.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,11 +7,11 @@ namespace Ecommerce.Models.ViewModel
 {
     public class UserProductViewModel
     {
-        public List<User> UserView { get; set; }
+        public User User { get; set; }
         public List<Product> ProductView { get; set; }
         public List<News> News { get; set; }
+        public Product Product { get; set; }
         public bool IsLogin { get; set; }
-
         public int ProductPerPage { get; set; }
         public int Currentpage { get; set; }
         public int PageCount()

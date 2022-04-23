@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,21 +17,43 @@ namespace Ecommerce.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProduct _product;
-        private readonly INews _news;
-        public HomeController(ILogger<HomeController> logger, IProduct product, INews news)
+        private readonly IAuthenticate _authenticate;
+        /*private readonly INews _news;*/
+
+        public HomeController(ILogger<HomeController> logger, IProduct product, IAuthenticate authenticate /*INews news*/)
         {
             _logger = logger;
             _product = product;
-            _news = news;
+            _authenticate = authenticate;   
+            /*_news = news;*/
+               
         }
 
         public async Task<IActionResult> Index(UserProductViewModel userProductViewModel)
-        {
+        {                    
+
             userProductViewModel.ProductView = await _product.GetProduct();
-            userProductViewModel.News = await _news.GetNews();            
+           /* userProductViewModel.News = await _news.GetNews();*/
+            if(userProductViewModel.User != null)
+            {
+                userProductViewModel.IsLogin = true;
+            }
+            
             return View(userProductViewModel);
         }
-   
+        public async Task<IActionResult> LoadMore(UserProductViewModel model, LoginViewModel viewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                if (await _authenticate.LoginAsync(viewModel))
+                {
+                    model.IsLogin = true;
+                    return RedirectToAction("ProductInfo", "Products", model);
+                }
+            }
+
+            return View();
+        }
         
         public IActionResult Privacy()
         {

@@ -1,46 +1,46 @@
 ﻿using Ecommerce.Interface;
-using Ecommerce.Models;
+using EcommerceData.Models;
 using Ecommerce.Models.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Ecommerce.Services
 {
     public class UserService : IUsers
     {
-        private readonly IReadFromJson _dbContext;
-        private readonly IWriteToJson _writeToJson;
-        private readonly string userFile = "User.json";
-        public UserService(IReadFromJson dbContext , IWriteToJson writeToJson)
+        private readonly IUserRepo _userRepo;
+       
+        public UserService(IUserRepo userRepo)
         {
-            _dbContext = dbContext;
-            _writeToJson = writeToJson;
+            _userRepo = userRepo;           
         }
+       
+
         public async Task<List<User>> GetUsers()
         {
-            try
-            {
-                return (List<User>)await _dbContext.ReadJson<User>(userFile);
-            }
-            catch (Exception)
-            {
+            var users = await _userRepo.GetUser();
 
-                throw;
+            if (users == null)
+            {
+                return null;
             }
+
+            return users;
         }
-
-        public async Task<bool> AddUser(User user)
+        public async Task<User> GetUserByEmailPasswordService(LoginViewModel viewModel)
         {
-            try
-            {
-                return await _writeToJson.WriteJson(user, userFile);
-            }
-            catch (Exception)
-            {
 
-                throw;
+            var users = await _userRepo.GetUser();
+            var user = users.FirstOrDefault(s => s.Email == viewModel.Email && s.Password == viewModel.Password);
+            if (user == null)
+            {
+                return null;
             }
-        }   
+            return user;    
+        }
+       
     }
 }

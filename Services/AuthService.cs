@@ -1,33 +1,30 @@
 ﻿using Ecommerce.Interface;
 using Ecommerce.Models.ViewModel;
+using EcommerceData.DataBase;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Ecommerce.Services
 {
     public class AuthService : IAuthenticate
     {
-        private readonly IUsers _user;
+        private readonly IUserRepo _userRepo;
 
-        public AuthService(IUsers user)
+        public AuthService(IUserRepo userRepo)
         {
-            _user = user;
+            _userRepo = userRepo;
         }
 
         public async Task<bool> LoginAsync(LoginViewModel model)
         {
-            var userlist = await _user.GetUsers();
-            foreach(var item in userlist)
-            {
-                if(userlist== null)
-                {
-                    return false;
-                }
+            var users = await _userRepo.GetUser();
+            var user = users.FirstOrDefault(s => s.Email == model.Email && s.Password == model.Password);
 
-                if(item.Email == model.Email && item.Password == model.Password)
-                {
-                    return true;
-                }
+            if (user != null)
+            {
+                return true;
             }
+
             return false;
         }
     }

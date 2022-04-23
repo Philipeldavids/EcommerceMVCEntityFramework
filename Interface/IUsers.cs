@@ -1,4 +1,4 @@
-﻿using Ecommerce.Models;
+﻿using EcommerceData.Models;
 using Ecommerce.Models.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -11,6 +11,7 @@ namespace Ecommerce.Interface
     public interface IUsers
     {
         Task<List<User>> GetUsers();
-        Task<bool> AddUser(User user);
+        Task<User> GetUserByEmailPasswordService(LoginViewModel loginViewModel);
+        //Task<bool> AddUser(User user);
     }
 }

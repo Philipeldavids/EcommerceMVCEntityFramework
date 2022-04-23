@@ -1,6 +1,9 @@
-using Ecommerce.Helper;
 using Ecommerce.Interface;
+using Ecommerce.Repository;
 using Ecommerce.Services;
+using EcommerceData;
+using EcommerceData.DataBase;
+using EcommerceData.ServiceExtension;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,16 +30,18 @@ namespace Ecommerce
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IReadFromJson, ReadFromJson>();
+            services.AddScoped<IProductRepo, ProductRepo>();
+            services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<IProduct, ProductService>();
             services.AddScoped<IUsers, UserService>();
-            services.AddScoped<IAuthenticate, AuthService>();  
-            services.AddScoped<IWriteToJson, WriteToJson>();  
-            services.AddScoped<INews, NewsService>();
+            services.AddScoped<IAuthenticate, AuthService>();
+            /*services.AddScoped<INews, NewsService>();*/
+            services.RegisterDBContext(Configuration);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext dbContext)
         {
             if (env.IsDevelopment())
             {
@@ -48,12 +53,13 @@ namespace Ecommerce
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            Seeder.SeedData(dbContext).GetAwaiter().GetResult();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthorization();            
 
             app.UseEndpoints(endpoints =>
             {
@@ -61,6 +67,7 @@ namespace Ecommerce
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            
         }
     }
 }

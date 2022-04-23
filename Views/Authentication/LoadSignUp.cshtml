@@ -1,6 +1,7 @@
-﻿@model Ecommerce.Models.User
+﻿@model EcommerceData.Models.User
 @{
     ViewData["Title"] = "LoadSignUp";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
 @*<h1>LoadSignUp</h1>*@
@@ -27,11 +28,7 @@
             <div class="form-control">
                 <label>PhoneNumber:</label> 
                 <input asp-for="PhoneNumber" />
-            </div>
-             <div class="form-control">
-                <label>Address:</label> 
-                <textarea id="text" name="text" rows="40" cols="50" asp-for="Address" ></textarea>
-            </div>
+            </div>             
         </div>
         <div class="gender">
             <div>
@@ -45,7 +42,7 @@
         </div>
         <div class="form-control">
             <label>DateofBirth</label> 
-            <input type="Date" asp-for="DateofBirth" /><br />   
+            <input type="Date" asp-for="DateOfBirth" /><br />   
         </div>
         <div class= "form-action">
             <button type="submit">Register</button>

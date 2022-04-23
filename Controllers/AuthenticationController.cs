@@ -14,16 +14,22 @@ namespace Ecommerce.Controllers
             _authenticate = authenticate;
         }
 
-        
-        public async Task<IActionResult> Login(LoginViewModel viewModel)
+        [HttpGet]
+        public IActionResult GetLogin()
+        {            
+            return View();  
+        }
+        [HttpPost]
+        public async Task<IActionResult> GetLogin(LoginViewModel viewModel, UserProductViewModel model)
         {
-            
+
             if (ModelState.IsValid)
             {
-                if(await _authenticate.LoginAsync(viewModel))
+                if (await _authenticate.LoginAsync(viewModel))
                 {
-                    return RedirectToAction("Index","Home");                    
-                }                
+                    model.IsLogin = true;
+                    return RedirectToAction("Index", "Home", model);
+                }
             }
             return View(viewModel);
         }
@@ -31,14 +37,6 @@ namespace Ecommerce.Controllers
         {
             return View();
         }
-        /*[HttpPost("Login")]
-        public IActionResult Login()
-        {
-            if (ModelState.IsValid)
-            {
-
-            }
-            return View();
-        }*/
+        
     }
 }

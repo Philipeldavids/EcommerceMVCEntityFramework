@@ -1,6 +1,7 @@
 ﻿using Ecommerce.Interface;
 using Ecommerce.Models;
 using Ecommerce.Models.ViewModel;
+using EcommerceData.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -9,33 +10,34 @@ namespace Ecommerce.Controllers
 {
     public class UserController : BaseController
     {
-        private readonly IUsers _user;
-        public UserController(IUsers user)
-        {
-            _user = user;
-        }
+        
+        private readonly IUserRepo _userRepo;
        
-        public async Task<IActionResult> Register(UserViewModel viewmodel)
+        public UserController(IUserRepo userRepo)
+        {
+            _userRepo = userRepo;
+        }
+
+        public IActionResult Register(UserViewModel viewmodel)
         {
             var newUser = new User
             {
-                Id = Guid.NewGuid().ToString(),
                 FirstName = viewmodel.FirstName,
                 LastName = viewmodel.LastName,
                 Email = viewmodel.Email,
                 Password = viewmodel.Password,
                 PhoneNumber = viewmodel.PhoneNumber,
-                Address = viewmodel.Address,
-                Gender = viewmodel.Gender = true ? "Male": "Female",
-                DateofBirth = viewmodel.DateofBirth,
+                Gender = viewmodel.Gender = true ? "Male" : "Female",
+                DateOfBirth = viewmodel.DateofBirth,
             };
-            var added = await _user.AddUser(newUser);
-            if (added)
+            var userAdded = _userRepo.AddUser(newUser);
+
+            if (userAdded)
             {
-                return RedirectToAction("Login","Authentication");
+                return RedirectToAction("GetLogin", "Authentication");
             }
 
-            return View();  
-        }        
+            return View();
+        }
     }
 }

@@ -5,6 +5,6 @@ namespace Ecommerce.Interface
 {
     public interface IAuthenticate
     {
-        Task<bool> LoginAsync(LoginViewModel model);        
+        Task<bool> LoginAsync(LoginViewModel model);
     }
 }
