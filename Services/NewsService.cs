@@ -7,39 +7,27 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Services
 {
-    /*public class NewsService : INews
+    public class NewsService : INews
     {
-       private readonly ICommandHandler _handler;
-        public NewsService(ICommandHandler handler)
+       private readonly INewsRepo _newsRepo;
+        public NewsService(INewsRepo newsRepo)
         {
-            _handler = handler;           
+            _newsRepo = newsRepo;           
         }
         public async Task<List<News>> GetNews()
         {
             try
             {
-                var news = await _handler.SelectAllFromDB("dbo.spGetNews");
-                List<News> newsList = new List<News>();
-                while (news.Read())
-                {
-                    News newNews = new News()
-                    {
-                        Id = (int)news["Id"],
-                        Title = (string)news["Title"],
-                        ImageUrl = (string)news["ImageUrl"],
-                        Content = (string)news["Content"],
-                        Date = DateTime.Now
-                    };
-                    newsList.Add(newNews);
-                }
-                return newsList;
+                var news = await _newsRepo.GetNews();               
+                return news;
+                
             }
             catch (Exception)
             {
 
                 throw;
             }
-        }*//*
+        }
 
-    }*/
+    }
 }

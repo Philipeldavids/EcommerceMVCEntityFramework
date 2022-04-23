@@ -18,7 +18,7 @@ namespace Ecommerce.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IProduct _product;
         private readonly IAuthenticate _authenticate;
-        /*private readonly INews _news;*/
+        private readonly INews _news;
 
         public HomeController(ILogger<HomeController> logger, IProduct product, IAuthenticate authenticate /*INews news*/)
         {
@@ -33,8 +33,8 @@ namespace Ecommerce.Controllers
         {                    
 
             userProductViewModel.ProductView = await _product.GetProduct();
-           /* userProductViewModel.News = await _news.GetNews();*/
-            if(userProductViewModel.User != null)
+            userProductViewModel.News = await _news.GetNews();
+            if (userProductViewModel.User != null)
             {
                 userProductViewModel.IsLogin = true;
             }

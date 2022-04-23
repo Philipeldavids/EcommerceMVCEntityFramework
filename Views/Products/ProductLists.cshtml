@@ -71,6 +71,7 @@
             {      
                 if(@item.Id < 10)
                 {
+                    <a asp-controller="Products" asp-action ="ProductInfo" asp-route-id ="@item.Id">
                      <div class="contain">
                                 <img src="@item.ImageUrl" alt="" class="product-image" >                     
                         <div class = "product-desc">
@@ -90,7 +91,8 @@
                                 </div>                        
                             </div>                
                         </div>
-                    </div>             
+                    </div>     
+                    </a>
                 }                       
             }
             </div>

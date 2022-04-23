@@ -58,6 +58,7 @@
             {    
                 if(@item.Id < 9)
                 {
+                    <a asp-controller="Products" asp-action ="ProductInfo" asp-route-id ="@item.Id">
                     <div class="contain">
                         <img src="@item.ImageUrl" alt="" class="product-image" >                     
                         <div class = "product-desc">
@@ -77,14 +78,15 @@
                                 </div>                        
                             </div>                
                         </div>
-                    </div>        
+                    </div>    
+                    </a>
                 }                
             }
         </div>      
     </div>   
      
     <div class="mid-section">
-        <div id="heading-mid"><a asp-controller="Home" asp-action="LoadMore">LOAD MORE</a></div>
+        <div id="heading-mid"><a asp-controller="Products" asp-action="ProductLists">LOAD MORE</a></div>
         <div class="mid-content">
             <div id="caption-mid">
                 <h2>Adidas Men Running</br>
