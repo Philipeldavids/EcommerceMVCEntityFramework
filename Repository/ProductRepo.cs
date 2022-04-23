@@ -18,8 +18,7 @@ namespace Ecommerce.Repository
         public async Task<List<Product>> GetProduct()
         {
             //Eager Loading
-            var products = await _dbContext.Products
-                        .Include(s => s.Orders)                     
+            var products = await _dbContext.Products                                            
                         .Include(s => s.Category).ToListAsync();
 
 
