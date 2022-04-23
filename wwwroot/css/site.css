@@ -472,7 +472,7 @@ a:hover {
     }
 
 .button {
-    position absolute;
+    position: absolute;
     padding: 10px;
     background-color: #40BFFF;
     color: #F6F7F8;
