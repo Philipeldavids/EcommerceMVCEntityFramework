@@ -13,12 +13,22 @@ document.getElementById("icon").addEventListener("click", (e) => {
     document.getElementById("myMenu").style.justifyContent = "flex-end";
 });
 
-/*function myFunction() {
-    var x = document.getElementById("myMenu");
-    if (x.className === "menu") {
-        x.className += " responsive";
-    } else {
-        x.className = "menu";
-    }
+const Plus = document.querySelector('.plus');
+const Minus = document.querySelector('.minus');
+const Totalnumber = document.querySelector('.number-count');
+
+
+let count = 0;
+Totalnumber.innerHTML = count;
+function increment() {
+    count = count + 1;
+    Totalnumber.innerHTML = count;
 }
-*/
+
+
+function decrement() {
+    count = count - 1;
+    Totalnumber.innerHTML = count;
+}
+Plus.addEventListener('click', increment)
+Minus.addEventListener('click', decrement)
